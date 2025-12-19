@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Experience</title>
+
+  <!-- Google Fonts for Handwritten Style -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ------------------ SCREEN 1: INTRO OVERLAY ------------------ -->
+  <section id="screen1" class="screen active">
+    <h1 class="fade-in">I made you a website</h1>
+  </section>
+
+  <!-- ------------------ SCREEN 2: BIRTHDAY CAKE ------------------ -->
+  <section id="screen2" class="screen">
+    <div class="card">
+      <!-- Change the name here -->
+      <h1 class="handwritten">Happy Birthday Royal</h1>
+      <p class="age-text">21 — can you do sum for me</p>
+
+      <!-- Cake -->
+      <div id="cake" role="button" aria-label="Birthday Cake">🎂</div>
+
+      <p class="instruction">Tap the cake to unlock your surprise</p>
+    </div>
+  </section>
+
+  <!-- ------------------ SCREEN 3: PRESENTS ------------------ -->
+  <section id="screen3" class="screen">
+    <div class="card">
+      <h1>Presents for You</h1>
+      <p class="subtitle">Click any gift to open</p>
+
+      <div class="gifts">
+        <div class="gift" data-type="envelope">✉️</div>
+        <div class="gift" data-type="heart">❤️</div>
+        <div class="gift" data-type="ribbon">🎁</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------ MODALS ------------------ -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="birthdayAudio" src="audio/birthday.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
