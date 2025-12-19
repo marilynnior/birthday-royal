@@ -123,6 +123,12 @@ body {
   animation: fadeIn 0.5s ease forwards;
 }
 
+/* Keep modal content constrained but scrollable when images overflow */
+.modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 #closeModal {
   position: absolute;
   top: 10px;
@@ -163,8 +169,17 @@ body {
 
 .photo-gallery {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 15px;
   margin-top: 15px;
+}
+
+/* Make gallery photos responsive and stack nicely so user can scroll up/down */
+.gallery-photo {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 8px;
 }

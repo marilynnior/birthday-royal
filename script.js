@@ -99,6 +99,10 @@ function showModal(type) {
                 <div class="photo-gallery">
                <img width="200" height="auto" src="./photos/photo3.jpg" alt="Photo 3" class="gallery-photo">
                <img width="200" height="auto" src="./photos/photo4.jpg" alt="Photo 4" class="gallery-photo">
+              <img width="200" height="auto" src="./photos/photo5.jpg" alt="Photo 5" class="gallery-photo">
+              <img width="200" height="auto" src="./photos/photo6.jpg" alt="Photo 6" class="gallery-photo">
+              <img width="200" height="auto" src="./photos/photo7.jpg" alt="Photo 7" class="gallery-photo">
+              
                </div>
                
                `;
