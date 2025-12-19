@@ -49,12 +49,12 @@ gifts.forEach(gift => {
   });
 });
 
-function showModal(type){
+function showModal(type) {
   let content = '';
 
   // ------------------ CUSTOMIZE CONTENT HERE ------------------
-  if(type === 'envelope'){
-  content = `
+  if (type === 'envelope') {
+    content = `
     <h2>💌 Happy Birthday, my Orchard 💌</h2>
     <p>
       Remember who calls you that back in secondary school?  
@@ -82,8 +82,8 @@ function showModal(type){
       I can’t wait to see you in the UK and make even more unforgettable memories together.
     </p>
   `;
-}
-  if(type === 'heart'){
+  }
+  if (type === 'heart') {
     // Heart gift → banquet of roses
     content = `<div class="rose-banquet">
                  🌹🌹🌹🌹🌹<br>
@@ -92,9 +92,17 @@ function showModal(type){
                </div>
                <p class="rose-message">Special roses for the birthday boy</p>`;
   }
-  if(type === 'ribbon'){
+  if (type === 'ribbon') {
+    // <p>📸 Add your images here or swap with real images.</p>
     content = `<h2>Photo Gallery</h2>
-               <p>📸 Add your images here or swap with real images.</p>`;
+               
+                <div class="photo-gallery">
+               <img width="200" height="auto" src="./photos/photo3.jpg" alt="Photo 3" class="gallery-photo">
+               <img width="200" height="auto" src="./photos/photo4.jpg" alt="Photo 4" class="gallery-photo">
+               </div>
+               
+               `;
+
   }
 
   modalBody.innerHTML = content;
@@ -107,7 +115,7 @@ closeModal.addEventListener('click', () => {
 });
 
 window.addEventListener('click', e => {
-  if(e.target === modal){
+  if (e.target === modal) {
     modal.style.display = 'none';
   }
 });

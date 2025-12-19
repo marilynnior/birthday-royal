@@ -159,3 +159,12 @@ body {
   .gift {font-size: 5rem;}
   .card {padding:3rem;}
 }
+
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
